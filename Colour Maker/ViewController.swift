@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        redControl.on = false
+        greenControl.on = false
+        blueControl.on = false
     }
 
     @IBAction func changeColorComponent(Sender: AnyObject) {
