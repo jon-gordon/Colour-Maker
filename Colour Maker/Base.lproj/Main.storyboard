@@ -53,6 +53,9 @@
                                             <constraint firstAttribute="width" constant="49" id="igp-wb-d5T"/>
                                             <constraint firstAttribute="height" constant="31" id="xqw-fS-Ugo"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="ic4-qu-XrD"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5k5-ZU-8zB">
                                         <rect key="frame" x="17" y="124" width="73" height="21"/>
@@ -71,6 +74,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eoC-EK-fIQ">
                                         <rect key="frame" x="111" y="119" width="51" height="31"/>
                                         <color key="onTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="6rz-G1-0Ag"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGN-84-rze">
                                         <rect key="frame" x="111" y="18" width="51" height="31"/>
@@ -81,6 +87,9 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="jZg-g2-Ryo"/>
                                         </constraints>
                                         <color key="onTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeColorComponent:" destination="vXZ-lx-hvc" eventType="valueChanged" id="N2s-4L-As9"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -128,6 +137,12 @@
                             <constraint firstAttribute="centerX" secondItem="NGg-JU-eBj" secondAttribute="centerX" id="iXe-vX-by9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueControl" destination="eoC-EK-fIQ" id="wOy-ea-xeV"/>
+                        <outlet property="colorView" destination="5zv-rr-tqS" id="WQv-rq-vp6"/>
+                        <outlet property="greenControl" destination="DHx-LQ-4JD" id="7Tj-e6-NHE"/>
+                        <outlet property="redControl" destination="PGN-84-rze" id="Ji0-8h-5B4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
